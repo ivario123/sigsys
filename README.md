@@ -2,7 +2,7 @@
 These are my lab solutions for [S0004E](https://ltu.instructure.com/courses/16713) signals and systems course at LTU.
 
 ## Lab 1
-Simple linear systems, mainly a matlab pratice exercise.
+Simple linear systems, mainly a Matlab pratice exercise.
 
 key ideas:
   - Impulse response
