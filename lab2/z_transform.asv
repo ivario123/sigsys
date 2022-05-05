@@ -1,0 +1,8 @@
+function X = z_transform(x)
+    X = 0;
+    len = length(x);
+    z = sym('z');
+    for i = 0:len-1
+       X = X+x(i+1)*z^(-i)
+    end
+end
