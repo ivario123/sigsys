@@ -97,7 +97,7 @@ switch action
   info.b_exitpzlab = create_button([430 240 170 25],'Exit PZlab','exitpzlab');
   set(fig,'UserData',info,'HandleVisibility','on');
   pzlab('redraw')
-
+  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  case('addzeros')
@@ -467,8 +467,9 @@ switch action
   
   save PZoutput pz_poles pz_zeros
 
-  set(info.b_exitpzlab,'ForegroundColor',info.fcol,'BackgroundColor',info.bcol);
-  answer = questdlg('Really close PZlab?','','Yes','No','No');
+  %set(info.b_exitpzlab,'ForegroundColor',info.fcol,'BackgroundColor',info.bcol);
+  %answer = questdlg('Really close PZlab?','','Yes','No','No');
+  answer = 'Yes';
   if strcmp(answer,'Yes')
   set(info.b_exitpzlab,'ForegroundColor',[0.0 0.0 0.0],'BackgroundColor',[0.7 0.7 0.7]);
   delete(gcf)
